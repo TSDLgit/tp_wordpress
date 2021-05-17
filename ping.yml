@@ -1,7 +1,7 @@
 ---
 
-  -name: Test ping
-   host: wordpress
-   tasks:
+   - name: Test ping
+     hosts: wordpress
+     tasks:
      - name: ping
        ping:
