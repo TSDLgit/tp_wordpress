@@ -79,7 +79,7 @@
         name: nginx
         state: present
 
-   - name: restart nginx
+    - name: restart nginx
       service:
         name: nginx
         state: started
