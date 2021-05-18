@@ -117,9 +117,11 @@
     - name: Unzip Wordpress
       unarchive:
         src: /tmp/wordpress.zip
-        dest: /tmp
+        dest: /var/www/book.example.com
         remote_src: yes
-        creates: /tmp/wordpress/wp-settings.php
+        creates: /var/www/book.example.com/wp-settings.php
+
+
 
   handlers:
     - name: restart nginx
